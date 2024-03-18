@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/layouts/Navbar";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Montserrat } from "next/font/google";
