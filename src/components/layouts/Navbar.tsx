@@ -2,9 +2,10 @@ import Link from "next/link";
 import React from "react";
 import Logo from "../Logo";
 import CustomLink from "../CustomLink";
-import FacebookIcon from "../icons/FacebookIcon";
-import GithubIcon from "../icons/GithubIcon";
-import LinkedinIcon from "../icons/LinkedinIcon";
+import { FacebookIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../icons";
+import { motion } from "framer-motion";
+
+const MotionLink = motion(Link);
 
 const Navbar = () => {
   return (
@@ -16,18 +17,38 @@ const Navbar = () => {
         <CustomLink href="/articles" title="Articles"></CustomLink>
       </nav>
       <nav className="flex gap-5 items-start">
-        <Link href="/">
-          <FacebookIcon />
-        </Link>
-        <Link href="/">
+        <MotionLink
+          href="https://github.com/phphuongbinh"
+          target="_blank"
+          whileHover={{ y: -4 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <GithubIcon />
-        </Link>
-        <Link href="/">
+        </MotionLink>
+        <MotionLink
+          href="https://www.linkedin.com/in/phanphuongbinh/"
+          target="_blank"
+          whileHover={{ y: -4 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <LinkedinIcon />
-        </Link>
-        <Link href="/">T</Link>
-        <Link href="/">T</Link>
-        <Link href="/">T</Link>
+        </MotionLink>
+        <MotionLink
+          href="https://twitter.com/phuongbinhdev"
+          target="_blank"
+          whileHover={{ y: -4 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <TwitterIcon />
+        </MotionLink>
+        <MotionLink
+          href="https://www.facebook.com/phuongbinhdev"
+          target="_blank"
+          whileHover={{ y: -4 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <FacebookIcon />
+        </MotionLink>
       </nav>
 
       <div className="absolute left-[50%] top-3 translate-x-[-50%]">
