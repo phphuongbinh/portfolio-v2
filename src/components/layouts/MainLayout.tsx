@@ -6,7 +6,7 @@ interface MainLayourProps {
 
 const MainLayout = ({ children }: MainLayourProps) => {
   return (
-    <div className="w-full h-full inline-block z-0 bg-light px-32">
+    <div className="w-full h-full inline-block z-0 bg-light px-32 relative">
       {children}
     </div>
   );

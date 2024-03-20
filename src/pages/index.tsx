@@ -4,10 +4,11 @@ import homeImage from "../../public/images/home-bg.png";
 import AnimatedText from "@/components/utils/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/icons";
+import HireMe from "@/components/utils/HireMe";
 
 export default function Home() {
   return (
-    <main className="flex items-center w-full min-h-screen text-dark">
+    <main className="flex items-center w-full min-h-screen text-dark relative">
       <MainLayout>
         <div className="flex items-center justify-between w-full">
           <div className="w-1/2">
@@ -47,6 +48,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <HireMe />
       </MainLayout>
     </main>
   );
