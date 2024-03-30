@@ -134,6 +134,34 @@ const projects = () => {
               title="NFT collection Website"
             />
           </div>
+          <div className="col-span-12">
+            <FeaturedProject
+              summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+              title="Crypto Screener Application"
+              link="https://github.com/codebucks27/CryptoBucks-Final-Code"
+              github="https://github.com/codebucks27/CryptoBucks-Final-Code"
+              img={projectImg}
+              type="Featured Project"
+            />
+          </div>
+          <div className="col-span-6">
+            <Project
+              type="Website Template"
+              github="/"
+              img={projectImg}
+              link="/"
+              title="NFT collection Website"
+            />
+          </div>
+          <div className="col-span-6">
+            <Project
+              type="Website Template"
+              github="/"
+              img={projectImg}
+              link="/"
+              title="NFT collection Website"
+            />
+          </div>
         </div>
       </main>
     </>
