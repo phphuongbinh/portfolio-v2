@@ -4,7 +4,7 @@ import CircularText from "../icons/CircularText";
 
 const Footer = () => {
   return (
-    <div className="py-8 px-32 border-t-2 border-dark flex justify-between items-center text-base font-medium">
+    <div className="py-8 px-32 border-t-2 border-dark flex justify-between items-center text-base font-medium dark:border-light dark:text-light">
       <div>{new Date().getFullYear()} &copy; All Rights Reserved.</div>
       <div>
         Built with <span className="text-primary">&#9825;</span> by{" "}
