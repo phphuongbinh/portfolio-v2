@@ -21,6 +21,8 @@ export default function Home() {
                 src={homeImage}
                 alt="home-image"
                 className="w-full h-auto"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               ></Image>
             </div>
             <div className="w-1/2">
