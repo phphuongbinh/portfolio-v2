@@ -10,7 +10,7 @@ interface SkillProps {
 const Skill = ({ name, x, y }: SkillProps) => {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-full font-semibold bg-dark text-light px-6 py-3 absolute shadow-dark cursor-pointer"
+      className="flex items-center justify-center rounded-full font-semibold bg-dark text-light px-6 py-3 absolute shadow-dark cursor-pointer dark:bg-light dark:text-dark dark:shadow-light"
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y }}
@@ -25,12 +25,12 @@ const Skill = ({ name, x, y }: SkillProps) => {
 const Skills = () => {
   return (
     <>
-      <h2 className="text-8xl font-bold mt-48 w-full text-center mb-4">
+      <h2 className="text-8xl font-bold mt-48 w-full text-center mb-4 dark:text-light">
         Skills
       </h2>
-      <div className="relative w-full h-screen flex items-center justify-center rounded-full bg-circularLight">
+      <div className="relative w-full h-screen flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light px-6 py-3 shadow-dark cursor-pointer"
+          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light px-6 py-3 shadow-dark cursor-pointer dark:bg-light dark:shadow-light dark:text-dark"
           whileHover={{ scale: 1.05 }}
         >
           Web

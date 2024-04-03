@@ -17,7 +17,7 @@ const ListItemIcon = ({ ref }: any) => {
           cx={75}
           cy={50}
           r={20}
-          className="stroke-primary stroke-1 fill-none"
+          className="stroke-primary dark:stroke-primaryDark stroke-1 fill-none"
         />
         <motion.circle
           cx={75}
@@ -32,7 +32,7 @@ const ListItemIcon = ({ ref }: any) => {
           cx={75}
           cy={50}
           r={10}
-          className="animate-pulse stroke-1 fill-primary"
+          className="animate-pulse stroke-1 fill-primary dark:fill-primaryDark"
         />
       </svg>
     </figure>
