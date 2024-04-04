@@ -15,8 +15,8 @@ export default function Home() {
       </Head>
       <main className="flex items-center w-full min-h-screen text-dark dark:text-light relative">
         <MainLayout>
-          <div className="flex items-center justify-between w-full">
-            <div className="w-1/2">
+          <div className="flex items-center justify-between w-full lg:flex-col md:pb-16 md:pt-24">
+            <div className="w-1/2 lg:hidden md:block md:w-full ">
               <Image
                 src={homeImage}
                 alt="home-image"
@@ -25,17 +25,17 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               ></Image>
             </div>
-            <div className="w-1/2">
+            <div className="w-1/2 lg:w-full lg:text-center">
               <AnimatedText
                 text="Turning Vision Into Reality With Code And Design."
-                className="text-6xl text-left"
+                className="text-6xl xl:text-5xl text-left lg:text-center lg:text-6xl md:text-4xl"
               />
               <p className="my-4 text-base font-medium">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perspiciatis, corrupti aspernatur laborum a saepe magni sed
                 eveniet doloremque numquam eligendi!
               </p>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 lg:justify-center">
                 <Link
                   href="/CV.pdf"
                   target="_blank"

@@ -24,7 +24,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="w-full px-32 lg:px-16 md:px-12 sm:px-8 py-8 font-medium flex justify-between items-center dark:text-light relative">
+    <header className="w-full px-32 lg:px-16 md:px-12 sm:px-8 py-8 font-medium flex justify-between items-center dark:text-light fixed left-0 top-0 right-0 z-50">
       <button
         className=" items-center justify-center flex-col hidden lg:flex"
         onClick={handleClickMenuButton}
