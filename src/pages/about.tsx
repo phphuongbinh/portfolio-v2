@@ -42,7 +42,7 @@ const about = () => {
       <main className="flex items-center justify-center flex-col w-full px-32 lg:px-16 md:px-8">
         <AnimatedText text="Passion Fuels Purpose" className="text-8xl py-8" />
         <div className="grid w-full grid-cols-8 gap-16 pb-16">
-          <div className="col-span-3 flex flex-col dark:text-light">
+          <div className="col-span-3 flex flex-col dark:text-light lg:col-span-8">
             <h2 className="text-lg text-dark/75 uppercase mb-4 font-bold dark:text-light/75">
               Biography
             </h2>
