@@ -10,7 +10,7 @@ interface SkillProps {
 const Skill = ({ name, x, y }: SkillProps) => {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-full font-semibold bg-dark text-light px-6 py-3 absolute shadow-dark cursor-pointer dark:bg-light dark:text-dark dark:shadow-light"
+      className="flex items-center justify-center rounded-full font-semibold bg-dark text-light px-6 py-3 absolute shadow-dark cursor-pointer dark:bg-light dark:text-dark dark:shadow-light lg:px-4 lg:py-2 md:px-3 md:py-[6px] md:text-sm sm:text-dark sm:bg-transparent dark:sm:text-light dark:sm:bg-transparent"
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y }}
@@ -25,10 +25,10 @@ const Skill = ({ name, x, y }: SkillProps) => {
 const Skills = () => {
   return (
     <>
-      <h2 className="text-8xl font-bold mt-48 w-full text-center mb-4 dark:text-light">
+      <h2 className="text-8xl font-bold mt-48 w-full text-center mb-4 dark:text-light md:text-6xl">
         Skills
       </h2>
-      <div className="relative w-full h-screen flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
+      <div className="relative w-full h-screen flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:h-[80vh] md:h-[60vh] sm:h-[50vh]">
         <motion.div
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light px-6 py-3 shadow-dark cursor-pointer dark:bg-light dark:shadow-light dark:text-dark"
           whileHover={{ scale: 1.05 }}

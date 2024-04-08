@@ -7,7 +7,7 @@ const Details = ({ position, company, time, address, work }: any) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-[70%] mx-auto flex flex-col items-center justify-between"
     >
       <ListItemIcon ref={ref} />
       <motion.div
@@ -42,11 +42,14 @@ const Experience = () => {
   });
   return (
     <div className="my-48">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center dark:text-light">
+      <h2 className="font-bold text-8xl mb-32 w-full text-center dark:text-light md:text-6xl sm:text-4xl md:mb-16">
         Experience
       </h2>
 
-      <div ref={ref} className="w-[75%] mx-auto relative">
+      <div
+        ref={ref}
+        className="w-[75%] mx-auto relative lg:w-[85%]  md:w-[90%] sm:w-full"
+      >
         <motion.div
           className="absolute left-9 top-0 w-1 h-full bg-dark dark:bg-primaryDark origin-top"
           style={{

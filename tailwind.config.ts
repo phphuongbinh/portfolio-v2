@@ -23,7 +23,7 @@ const config: Config = {
       },
       backgroundImage: {
         circularLight: "repeating-radial-gradient(rgba(0,0,0,0.4) 2px , #f5f5f5 5px, #f5f5f5 100px )",
-        circularDark: "repeating-radial-gradient(rgba(255,255,255 ,0.8) 2px , #222 5px, #222 100px )"
+        circularDark: "repeating-radial-gradient(rgba(255,255,255 ,0.8) 2px , rgba(27,27,27,1) 5px, rgba(27,27,27,1) 100px )"
       }
     },
     screens: {
