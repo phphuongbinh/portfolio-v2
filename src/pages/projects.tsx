@@ -25,7 +25,7 @@ const FeaturedProject = ({
 }: FeaturedProjectProps) => {
   return (
     <article className="relative">
-      <div className="absolute -z-0 top-0 -right-4 w-[100%] h-[103%] bg-dark dark:bg-light  rounded-3xl"></div>
+      <div className="absolute -z-0 top-0 -right-4 w-[100%] h-[103%] bg-dark dark:bg-light  rounded-3xl lg:w-full"></div>
       <div className="w-full relative z-10 flex items-center justify-between rounded-3xl border-2 border-solid border-dark bg-light shadow-2xl space-x-6 p-12 dark:border-light dark:bg-dark">
         <Link href={link} target="_blank" className="w-1/2 ">
           <Image src={img} alt="" className="w-full h-auto rounded-lg"></Image>
