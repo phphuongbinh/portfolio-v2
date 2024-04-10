@@ -25,12 +25,12 @@ const FeaturedProject = ({
 }: FeaturedProjectProps) => {
   return (
     <article className="relative">
-      <div className="absolute -z-0 top-0 -right-4 w-[100%] h-[103%] bg-dark dark:bg-light  rounded-3xl lg:w-full"></div>
-      <div className="w-full relative z-10 flex items-center justify-between rounded-3xl border-2 border-solid border-dark bg-light shadow-2xl space-x-6 p-12 dark:border-light dark:bg-dark">
-        <Link href={link} target="_blank" className="w-1/2 ">
+      <div className="absolute -z-0 top-0 -right-4 w-[100%] h-[103%] bg-dark dark:bg-light  rounded-3xl"></div>
+      <div className="w-full relative z-10 flex items-center justify-between rounded-3xl border-2 border-solid border-dark bg-light shadow-2xl space-x-6 p-12 dark:border-light dark:bg-dark lg:flex-col lg:p-8">
+        <Link href={link} target="_blank" className="w-1/2 lg:w-full">
           <Image src={img} alt="" className="w-full h-auto rounded-lg"></Image>
         </Link>
-        <div className="w-1/2 ">
+        <div className="w-1/2 lg:w-full">
           <span className="text-xl text-primary font-medium dark:text-primaryDark">
             {type}
           </span>
@@ -115,12 +115,12 @@ const projects = () => {
         <title>Portfolio | Projects Page</title>
       </Head>
 
-      <main className="w-full mb-16 flex flex-col items-center justify-center px-32">
+      <main className="w-full mb-16 flex flex-col items-center justify-center px-32 xl:px-24 lg:px-12 md:px-8">
         <AnimatedText
           text="Imagination Trumps Knowledge!"
           className="text-8xl py-8 mb-12"
         />
-        <div className="grid grid-cols-12 gap-24">
+        <div className="grid grid-cols-12 gap-24 xl:gap-12 md:gap-8 sm:gap-4">
           <div className="col-span-12">
             <FeaturedProject
               summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
@@ -131,7 +131,7 @@ const projects = () => {
               type="Featured Project"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 md:col-span-12">
             <Project
               type="Website Template"
               github="/"
@@ -140,7 +140,7 @@ const projects = () => {
               title="NFT collection Website"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 md:col-span-12">
             <Project
               type="Website Template"
               github="/"
@@ -159,7 +159,7 @@ const projects = () => {
               type="Featured Project"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 md:col-span-12">
             <Project
               type="Website Template"
               github="/"
@@ -168,7 +168,7 @@ const projects = () => {
               title="NFT collection Website"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 md:col-span-12">
             <Project
               type="Website Template"
               github="/"
