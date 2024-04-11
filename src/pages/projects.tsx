@@ -86,7 +86,7 @@ const Project = ({
           </span>
 
           <Link href={link} target="_blank">
-            <h2 className="text-4xl font-bold hover:underline my-3 dark:text-light">
+            <h2 className="text-4xl font-bold hover:underline my-3 dark:text-light lg:text-3xl md:text-2xl">
               {title}
             </h2>
           </Link>
@@ -118,7 +118,7 @@ const projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center px-32 xl:px-24 lg:px-12 md:px-8">
         <AnimatedText
           text="Imagination Trumps Knowledge!"
-          className="text-8xl py-8 mb-12"
+          className="text-8xl py-8 mb-12 lg:text-7xl md:text-6xl"
         />
         <div className="grid grid-cols-12 gap-24 xl:gap-12 md:gap-8 sm:gap-4">
           <div className="col-span-12">
